@@ -62,14 +62,14 @@ const
 
 
 Style( "my-list-class" , {
-    all : Flex.use({ gap:"20px" , mode:"row" , wrap:true })
+    all : Flex().use({ gap:"20px" , mode:"row" , wrap:true })
         .justify( { col: "space-evenly" ,  row:"center" } )
         .align({ wstretch:true , right:"20px" , left:"20px" })
         .visual({ h:"200px" , fg:text , bg:background }),
 
-    s :  This.visual({ w:"70%" }),
+    s :  This().visual({ w:"70%" }),
 
-    l : This.visual({ w:"768px" }),
+    l : This().visual({ w:"768px" }),
 })
 
 
